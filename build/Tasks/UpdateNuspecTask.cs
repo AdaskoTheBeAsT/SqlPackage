@@ -5,7 +5,7 @@ using Cake.Frosting;
 namespace Build.Tasks
 {
     [TaskName("UpdateNuspecs")]
-    [IsDependentOn(typeof(DownloadSqlPackageTask))]
+    [IsDependentOn(typeof(Utf16ToUtf8Task))]
     public class UpdateNuspecsTask : FrostingTask<BuildContext>
     {
         private const string NugetNamespace = "http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd";

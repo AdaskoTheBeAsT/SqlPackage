@@ -31,9 +31,9 @@ public class BuildContext
         SqlPackageUri = context.Arguments.HasArgument("sqlpackageuri")
             ? context.Arguments.GetArgument("sqlpackageuri")
             : "https://docs.microsoft.com/en-us/sql/tools/sqlpackage/sqlpackage-download?view=sql-server-ver15";
-        WindowsName = "unofficial.SqlPackage.native.win.x64";
-        MacOsName = "unofficial.SqlPackage.native.osx.x64";
-        LinuxName = "unofficial.SqlPackage.native.linux.x64";
-        MasterName = "unofficial.SqlPackage.native";
+        WindowsName = "AdaskoTheBeAsT.SqlPackage.native.win.x64";
+        MacOsName = "AdaskoTheBeAsT.SqlPackage.native.osx.x64";
+        LinuxName = "AdaskoTheBeAsT.SqlPackage.native.linux.x64";
+        MasterName = "AdaskoTheBeAsT.SqlPackage.native";
     }
 }

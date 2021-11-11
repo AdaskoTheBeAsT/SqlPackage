@@ -9,28 +9,28 @@
 	  <PackageReference Include="Cake.Frosting" Version="2.0.0-rc0001" />
   </ItemGroup>
   <ItemGroup>
-    <None Update="nuspecs\unofficial.SqlPackage.native.linux.x64\build\unofficial.SqlPackage.native.linux.x64.targets">
+    <None Update="nuspecs\AdaskoTheBeAsT.SqlPackage.native.linux.x64\build\AdaskoTheBeAsT.SqlPackage.native.linux.x64.targets">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="nuspecs\unofficial.SqlPackage.native.osx.x64\build\unofficial.SqlPackage.native.osx.x64.targets">
+    <None Update="nuspecs\AdaskoTheBeAsT.SqlPackage.native.osx.x64\build\AdaskoTheBeAsT.SqlPackage.native.osx.x64.targets">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="nuspecs\unofficial.SqlPackage.native.win.x64\build\unofficial.SqlPackage.native.win.x64.targets">
+    <None Update="nuspecs\AdaskoTheBeAsT.SqlPackage.native.win.x64\build\AdaskoTheBeAsT.SqlPackage.native.win.x64.targets">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="nuspecs\unofficial.SqlPackage.native\build\unofficial.SqlPackage.native.props">
+    <None Update="nuspecs\AdaskoTheBeAsT.SqlPackage.native\build\AdaskoTheBeAsT.SqlPackage.native.props">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="nuspecs\unofficial.SqlPackage.native.linux.x64\unofficial.SqlPackage.native.linux.x64.nuspec">
+    <None Update="nuspecs\AdaskoTheBeAsT.SqlPackage.native.linux.x64\AdaskoTheBeAsT.SqlPackage.native.linux.x64.nuspec">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="nuspecs\unofficial.SqlPackage.native\unofficial.SqlPackage.native.nuspec">
+    <None Update="nuspecs\AdaskoTheBeAsT.SqlPackage.native\AdaskoTheBeAsT.SqlPackage.native.nuspec">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="nuspecs\unofficial.SqlPackage.native.osx.x64\unofficial.SqlPackage.native.osx.x64.nuspec">
+    <None Update="nuspecs\AdaskoTheBeAsT.SqlPackage.native.osx.x64\AdaskoTheBeAsT.SqlPackage.native.osx.x64.nuspec">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="nuspecs\unofficial.SqlPackage.native.win.x64\unofficial.SqlPackage.native.win.x64.nuspec">
+    <None Update="nuspecs\AdaskoTheBeAsT.SqlPackage.native.win.x64\AdaskoTheBeAsT.SqlPackage.native.win.x64.nuspec">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
   </ItemGroup>
