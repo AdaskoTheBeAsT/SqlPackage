@@ -1,0 +1,12 @@
+[*]
+indent_style = space
+charset = utf-8
+
+[*.nuspec]
+indent_size = 2
+
+[*.props]
+indent_size = 2
+
+[*.targets]
+indent_size = 2

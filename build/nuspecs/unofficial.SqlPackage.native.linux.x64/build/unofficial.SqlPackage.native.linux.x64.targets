@@ -1,0 +1,14 @@
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Target Name="FixFilePermissions" BeforeTargets="BeforeBuild">
+    <!-- Ensure the various files are executable.  See https://github.com/NuGet/Home/issues/4424 -->
+    <Exec Command="chmod a+x $(MSBuildThisFileDirectory)../tools/sqlpackage" />
+  </Target>
+  <ItemGroup>
+    <CoreLibs Include="$(MSBuildThisFileDirectory)../tools/**" />
+    <None Include="@(CoreLibs)">
+      <Link>%(RecursiveDir)%(FileName)%(Extension)</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <Visible>false</Visible>
+    </None>
+  </ItemGroup>
+</Project>
