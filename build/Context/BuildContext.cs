@@ -27,7 +27,7 @@ public class BuildContext
     {
         Version = context.Arguments.HasArgument("version")
             ? context.Arguments.GetArgument("version")
-            : "18.8.0";
+            : "19.0.0";
         SqlPackageUri = context.Arguments.HasArgument("sqlpackageuri")
             ? context.Arguments.GetArgument("sqlpackageuri")
             : "https://docs.microsoft.com/en-us/sql/tools/sqlpackage/sqlpackage-download?view=sql-server-ver15";

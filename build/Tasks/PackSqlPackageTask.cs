@@ -1,5 +1,4 @@
 using Cake.Core.IO;
-using System.Xml.Linq;
 using Cake.Common.Tools.NuGet;
 using Cake.Common.Tools.NuGet.Pack;
 using Cake.Frosting;

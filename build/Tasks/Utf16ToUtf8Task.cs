@@ -1,6 +1,5 @@
 using System.IO;
 using System.Text;
-using Cake.Common.IO;
 using Cake.Core.IO;
 using Cake.Frosting;
 
