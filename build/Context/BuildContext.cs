@@ -27,10 +27,10 @@ public class BuildContext
     {
         Version = context.Arguments.HasArgument("version")
             ? context.Arguments.GetArgument("version")
-            : "19.0.0";
+            : "162.0.52";
         SqlPackageUri = context.Arguments.HasArgument("sqlpackageuri")
             ? context.Arguments.GetArgument("sqlpackageuri")
-            : "https://docs.microsoft.com/en-us/sql/tools/sqlpackage/sqlpackage-download?view=sql-server-ver15";
+            : "https://learn.microsoft.com/en-us/sql/tools/sqlpackage/sqlpackage-download?view=sql-server-ver16";
         WindowsName = "AdaskoTheBeAsT.SqlPackage.native.win.x64";
         MacOsName = "AdaskoTheBeAsT.SqlPackage.native.osx.x64";
         LinuxName = "AdaskoTheBeAsT.SqlPackage.native.linux.x64";

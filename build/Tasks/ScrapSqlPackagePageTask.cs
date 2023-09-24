@@ -9,22 +9,15 @@ namespace Build.Tasks
     [TaskName("ScrapSqlPackagePage")]
     public class ScrapSqlPackagePageTask : AsyncFrostingTask<BuildContext>
     {
-        private Regex _regexMac;
-        private Regex _regexLinux;
-        private Regex _regexWindows;
-
-        public ScrapSqlPackagePageTask()
-        {
-            _regexMac = new Regex(
-                "(?<=[<]td[^>]+[>][<]a[^>]+[>]macOS\\s\\.NET\\sCore[<][\\/]a[>][<][\\/]td[>]\\s+[<]td[^>]+[>][<]a\\shref=[\"])(?<url>[^\"]+)",
-                RegexOptions.Compiled | RegexOptions.IgnoreCase);
-            _regexLinux = new Regex(
-                "(?<=[<]td[^>]+[>][<]a[^>]+[>]Linux\\s\\.NET\\sCore[<][\\/]a[>][<][\\/]td[>]\\s+[<]td[^>]+[>][<]a\\shref=[\"])(?<url>[^\"]+)",
-                RegexOptions.Compiled | RegexOptions.IgnoreCase);
-            _regexWindows = new Regex(
-                "(?<=[<]td[^>]+[>][<]a[^>]+[>]Windows\\s\\.NET\\sCore[<][\\/]a[>][<][\\/]td[>]\\s+[<]td[^>]+[>][<]a\\shref=[\"])(?<url>[^\"]+)",
-                RegexOptions.Compiled | RegexOptions.IgnoreCase);
-        }
+        private readonly Regex _regexMac = new(
+            "[<]a\\shref=[\"](?<url>[^\"]+)[\"]\\sdata[-]linktype[=][\"]external[\"][>]SqlPackage for macOS[<][\\/]a[>]",
+            RegexOptions.Compiled | RegexOptions.IgnoreCase);
+        private readonly Regex _regexLinux = new(
+            "[<]a\\shref=[\"](?<url>[^\"]+)[\"]\\sdata[-]linktype[=][\"]external[\"][>]SqlPackage for Linux[<][\\/]a[>]",
+            RegexOptions.Compiled | RegexOptions.IgnoreCase);
+        private readonly Regex _regexWindows = new(
+            "[<]a\\shref=[\"](?<url>[^\"]+)[\"]\\sdata[-]linktype[=][\"]external[\"][>]SqlPackage for Windows[<][\\/]a[>]",
+            RegexOptions.Compiled | RegexOptions.IgnoreCase);
 
         public override async Task RunAsync(BuildContext context)
         {
